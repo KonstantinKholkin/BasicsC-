@@ -1,0 +1,13 @@
+E:\GeekBrains\C#\Lessons1\Exercise4\bin\Debug\netcoreapp3.1\Exercise4.exe
+E:\GeekBrains\C#\Lessons1\Exercise4\bin\Debug\netcoreapp3.1\Exercise4.deps.json
+E:\GeekBrains\C#\Lessons1\Exercise4\bin\Debug\netcoreapp3.1\Exercise4.runtimeconfig.json
+E:\GeekBrains\C#\Lessons1\Exercise4\bin\Debug\netcoreapp3.1\Exercise4.runtimeconfig.dev.json
+E:\GeekBrains\C#\Lessons1\Exercise4\bin\Debug\netcoreapp3.1\Exercise4.dll
+E:\GeekBrains\C#\Lessons1\Exercise4\bin\Debug\netcoreapp3.1\Exercise4.pdb
+E:\GeekBrains\C#\Lessons1\Exercise4\obj\Debug\netcoreapp3.1\Exercise4.GeneratedMSBuildEditorConfig.editorconfig
+E:\GeekBrains\C#\Lessons1\Exercise4\obj\Debug\netcoreapp3.1\Exercise4.AssemblyInfoInputs.cache
+E:\GeekBrains\C#\Lessons1\Exercise4\obj\Debug\netcoreapp3.1\Exercise4.AssemblyInfo.cs
+E:\GeekBrains\C#\Lessons1\Exercise4\obj\Debug\netcoreapp3.1\Exercise4.csproj.CoreCompileInputs.cache
+E:\GeekBrains\C#\Lessons1\Exercise4\obj\Debug\netcoreapp3.1\Exercise4.dll
+E:\GeekBrains\C#\Lessons1\Exercise4\obj\Debug\netcoreapp3.1\Exercise4.pdb
+E:\GeekBrains\C#\Lessons1\Exercise4\obj\Debug\netcoreapp3.1\Exercise4.genruntimeconfig.cache
