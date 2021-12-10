@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GeekBrains\\C#\\Lessons1\\Exercise5\\Exercise5.csproj": {}
+    "E:\\GeekBrains\\BasicsC#\\Lessons1\\Exercise5\\Exercise5.csproj": {}
   },
   "projects": {
-    "E:\\GeekBrains\\C#\\Lessons1\\Exercise5\\Exercise5.csproj": {
+    "E:\\GeekBrains\\BasicsC#\\Lessons1\\Exercise5\\Exercise5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GeekBrains\\C#\\Lessons1\\Exercise5\\Exercise5.csproj",
+        "projectUniqueName": "E:\\GeekBrains\\BasicsC#\\Lessons1\\Exercise5\\Exercise5.csproj",
         "projectName": "Exercise5",
-        "projectPath": "E:\\GeekBrains\\C#\\Lessons1\\Exercise5\\Exercise5.csproj",
+        "projectPath": "E:\\GeekBrains\\BasicsC#\\Lessons1\\Exercise5\\Exercise5.csproj",
         "packagesPath": "C:\\Users\\Const\\.nuget\\packages\\",
-        "outputPath": "E:\\GeekBrains\\C#\\Lessons1\\Exercise5\\obj\\",
+        "outputPath": "E:\\GeekBrains\\BasicsC#\\Lessons1\\Exercise5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Const\\AppData\\Roaming\\NuGet\\NuGet.Config",

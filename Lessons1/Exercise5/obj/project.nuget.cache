@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "peIgVgcgnKnOoubcRS6/bszACENKbVhB6JsyVvNLgvRrlFa92BJDMeTgk+/bn9as4gsJLctW5xx03fPi2hwdyg==",
+  "dgSpecHash": "dlvfK7ibadaR0/05FUzh0LTKU977ReQ04ubW1Odd7yodBwupuNgndM1UNvYw7Hb3cOSaP9r4iOA3syBODWd0PQ==",
   "success": true,
-  "projectFilePath": "E:\\GeekBrains\\C#\\Lessons1\\Exercise5\\Exercise5.csproj",
+  "projectFilePath": "E:\\GeekBrains\\BasicsC#\\Lessons1\\Exercise5\\Exercise5.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
