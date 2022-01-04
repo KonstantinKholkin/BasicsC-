@@ -4,8 +4,20 @@ using System.Collections.Generic;
 
 namespace Exercise2
 {
-    
-     class ResultText
+    /*
+ Задача2
+   Разработать статический класс Message, содержащий следующие статические методы для обработки текста:
+а) Вывести только те слова сообщения,  которые содержат не более n букв.
+б) Удалить из сообщения все слова, которые заканчиваются на заданный символ.
+в) Найти самое длинное слово сообщения.
+г) Сформировать строку с помощью StringBuilder из самых длинных слов сообщения.
+д) ***Создать метод, который производит частотный анализ текста. 
+В качестве параметра в него передается массив слов и текст, в качестве результата метод возвращает сколько раз каждое из слов массива входит в этот текст. 
+Здесь требуется использовать класс Dictionary.
+
+Выполнил Холкин Константин Юрьевич
+*/
+    class ResultText
     {
         static public string text;
 
@@ -51,7 +63,7 @@ namespace Exercise2
                 }
                 
             }
-            Console.WriteLine($"\nВ результате работы метода, исходный текст изменился на: \n {text}"  );
+           
         }
 
        
@@ -70,7 +82,7 @@ namespace Exercise2
                     maxWord = word;
                 }
             }
-            Console.WriteLine($"Слово с самой большой длинной:\n{maxWord}" );
+            
             return maxWord;
         }
 
@@ -99,7 +111,7 @@ namespace Exercise2
                     }
                 }
             }
-            Console.WriteLine("Частотный анализ текста дал следующий результат:\n ");
+            
             ICollection<string> keys = wordFrequency.Keys;
 
             String result = String.Format("{0,-10} {1,-10}\n\n", "Слово", "Частота появления");
@@ -108,6 +120,23 @@ namespace Exercise2
                 result += String.Format("{0,-10} {1,-10:N0}\n",
                                    key, wordFrequency[key]);
             Console.WriteLine($"\n{result}");
+        }
+        public void Print()
+        {
+            Console.WriteLine("\nДанн стих: \n" + ResultText.text);
+
+            Console.WriteLine("\nВыведем слова текста, которые содержат не более 6 букв:\n");
+            ResultText.GetWordsByLength(6);
+
+
+            Console.Write("\nУдалим из текста слова, заканчивающиеся на 'и': \n");
+            ResultText.DeleteWordByEndChar('и');
+
+            Console.WriteLine("\nСамое длинное слово в тексте: " + ResultText.FindMaxLengthWord());
+
+            Console.WriteLine("\nПроизведём частотный анализ текста: \n");
+            string[] arr = { "Новый", "год", "нам", "подарки" };
+            ResultText.FrequencyAnalysis(arr, ResultText.text);
         }
     }
 }
