@@ -5,7 +5,27 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Exercise4
-{
+{/*
+    Задача4
+   *Задача ЕГЭ.
+   На вход программе подаются сведения о сдаче экзаменов учениками 9-х классов некоторой средней школы. 
+В первой строке сообщается количество учеников N, которое не меньше 10, но не превосходит 100, каждая из следующих N строк имеет следующий формат: <Фамилия> <Имя> <оценки>,
+ 
+где <Фамилия> — строка, состоящая не более чем из 20 символов,
+<Имя> — строка, состоящая не более чем из 15 символов,
+<оценки> — через пробел три целых числа, 
+соответствующие оценкам по пятибалльной системе. 
+<Фамилия> и <Имя>, а также <Имя> и <оценки> разделены одним пробелом. 
+Пример входной строки:
+Иванов Петр 4 5 3
+Требуется написать как можно более эффективную программу, 
+которая будет выводить на экран фамилии и имена трёх худших по среднему баллу учеников.
+Если среди остальных есть ученики, набравшие тот же средний балл, что и один из трёх худших, следует вывести и их фамилии и имена.
+
+
+
+   Выполнил Холкин Константин Юрьевич
+   */
     class Student
     {
         int n;//Количество студентов
@@ -20,7 +40,7 @@ namespace Exercise4
         }
         public void CheckN ()//Проверка на корректность количества студентов
         {
-            if (n >= 1 && n<=3)//!!!!!!!!
+            if (n >= 10 && n<=100)
             {
                 Console.WriteLine("Введенно коректное число учеников!");
             }
@@ -49,7 +69,7 @@ namespace Exercise4
                     }
                     else
                     {
-                        Console.WriteLine("Введите 3 оценки студента через пробел");
+                        Console.WriteLine("Введите оценки студента через пробел");
                         student[i, j] = Console.ReadLine();
                     }
                 }
@@ -57,7 +77,7 @@ namespace Exercise4
             
 
         }
-        public void AverageRating()
+        public void AverageRating()//перевод ячейки оценнок в массив чисел и запись в массив среднюю оценку
         {
             
             result = new int[n];
@@ -66,17 +86,17 @@ namespace Exercise4
             {
                int summa=0;
                string[]rating = student[i, 2].Split(new char[]{' '},StringSplitOptions.RemoveEmptyEntries);
-               averagerating = rating.ToArray().Select(i => int.Parse(i.ToString())).ToArray();
+               averagerating = rating.ToArray().Select(i => int.Parse(i.ToString())).ToArray();//перевод в массив чисел
                 for (int j = 0;j <averagerating.Length;j++)
                 {
-                    summa = summa + averagerating[i];
+                    summa = summa + averagerating[j];
                 }
-                result[i] = summa/averagerating.Length;
+                result[i] = summa/averagerating.Length;//запись средней оценки
                 
             }      
                   
         }
-        public int MinResult()
+        public int MinResult()//нахождение худшего студента
         {
             int min = 5;
             int i;
@@ -92,12 +112,12 @@ namespace Exercise4
             return i;
         }
 
-        public void Print()
+        public void Print()//Печать массива
         {
             
-            for (int i = MinResult();  i < n; i++)
+            for (int i = MinResult();  i < student.GetLength(0); i++)
             {
-                for(int j = 0; j < 3; j++)
+                for(int j = 0; j < student.GetLength(1); j++)
                 {
                     Console.Write($" {student[i,j]} ");
                 }
