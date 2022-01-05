@@ -99,8 +99,8 @@ namespace Exercise4
         public int MinResult()//нахождение худшего студента
         {
             int min = 5;
-            int i;
-            for (i = 0;i < n; i++)
+            
+            for (int i = 0;i < n; i++)
             {
                 if(result[i] < min)
                 { 
@@ -109,19 +109,27 @@ namespace Exercise4
                 }
                
             }
-            return i;
+            return min;
         }
 
-        public void Print()//Печать массива
+        public void Print()//Вывод студентов с низким средним баллом
         {
-            
-            for (int i = MinResult();  i < student.GetLength(0); i++)
+            Console.WriteLine("\nХудшие ученики:");
+            for (int i = 0;  i < student.GetLength(0); i++)
             {
-                for(int j = 0; j < student.GetLength(1); j++)
-                {
-                    Console.Write($" {student[i,j]} ");
+                
+                int c = MinResult();
+                for (int j = 0; j < student.GetLength(1); j++)
+                { 
+                    
+                    if(result[i] <= c)
+                    {
+                        Console.Write($"{student[i,j]}\t");
+
+                    }
+                    
                 }
-                Console.WriteLine(" \n ------------------------------------------------");
+                Console.WriteLine(" \n ");
             }
             
 
